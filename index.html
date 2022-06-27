@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Kindle Library Website</title>
+ <meta charset="utf-8">
+ <meta name="description" content="Kindle Library website">
+ <meta name="author" content="Lesetja Modiba">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./css/style.css">
+ <script src="https://kit.fontawesome.com/be361c6523.js" crossorigin="anonymous"></script>
+ <script defer src="./JS/profile.js"></script>
+
+</head>
+<body>
+    <div class="amazon-logo-top">
+    <img  class="img-amazon-top" src="./assets/icons/amazon_logo_icon_169612.png" alt="profile photo">
+    </div>     
+    <div class="kindle-big">
+    <h1>
+        Kindle<span class="logo-span">.</span>
+    </h1>
+    </div>
+        <div class="container-behind"> </div>
+    
+    <div class="container">
+        <div class="tb1-container">
+            <table id="tableNav" >
+            <tr>
+                <label for="menu" class="menu-icon">&#9776</label>
+                <input type="checkbox" name="" id="menu" onclick="if (this.checked){isChecked()} else {notChecked()}">
+                <td id="logo"><h2>Kindle<span class="logo-span">.</span></h2>
+                    <div class="menu-items">
+                        <ul>
+                            <a>New Release</a>
+                         
+                            <a>Featured</a>
+                            <br></br><i class="fas fa-dice-d6"><a href="#">  Collections <br></br></a></i> 
+                            <i class="fa-solid fa-bookmark"><a href="#">  Saved</a> <br></br></i>
+                             <i class="fa-solid fa-user "><a href="#">  Profile<br></br> </a> </i>  
+                              <i class="fas fa-sign-out-alt"><a href="./login.html">  Log out<br></br></a></i> 
+                        </ul>
+                    </div>
+                </td>
+
+                <td></td>
+
+                <td align="right"><div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input class="search-books" type="text" 
+                    placeholder="Search your books">
+                </td>
+                <div class="navigation">
+                <td class="navigation" align="center">
+                    
+                    
+                        <a href="#">New Release <span class="dot-release">.</span></a>
+                        <a href="#"> Featured</a>
+                        <img src="./assets/icons/four-dots.png" alt="resize" class="fourDots"> 
+
+                </td>
+            </div>
+                <td ></td>
+              </table>
+            </div> 
+        <table class="table2" >
+            <tr >
+                <td><h2>Books you have read last </h2></td>
+            </tr>
+        </table>
+        <div class="tb2-container">
+        <table class="table4">
+        <tr class="tr1">
+        <div class="table3">
+                <td >
+                <div class="book-u-read1">
+                    <img alt="book1" class="book1" id="bookImg1">
+                    <span class="span-book-read"><h4 id="bookName1"></h4>
+                        <h6 id="comment1"></h6>
+                    </span></div></td>
+
+            <td> <div class="book-u-read2">
+                <img alt="book1" class="book2" id="bookImg2">
+                <span class="span-book-read"><h4 id="bookName2"> </h4>
+                    <h6 id="comment2"></h6>
+                </span></div></td>
+            <td> <div class="book-u-read3">
+                <img alt="book1" class="book3" id="bookImg3">
+                <span class="span-book-read"><h4 id="bookName3"></h4>
+                    <h6 id="comment3"></h6>
+                </span></div></td>
+       </tr>
+       
+    </table> </div>
+
+    <div class="left-panel-nav">
+            <div class="leftPanel">
+            <div class="profile-pic-div"> 
+                <img  src="assets/icons/user.jfif" id="img-user"> 
+          
+                    <input type="file" id="file">
+                    <label for="file" id="upload-btn">Choose file</label>  
+          
+            </div>
+        <div class="navig2"> <h4>Welcome Back</h4></div>
+        <div class="navig3" ><h4 id="name"></h4> </div>
+    </div></div>  
+     
+    
+     
+        <div class="lower-left-panel">
+            <div class="k-content">
+                <h3><span class="kindle-orange">  K.
+                </span></h3>
+                <div class="My"><h3>My</h3></div>
+                <div class="kindle-board"> <h4>kindle board</h4></div>
+            </div>
+            <div class="lower-links">
+
+
+                <div> <br></br><i class="fas fa-dice-d6"><a href="#">  Collections <br></br></a></i> </div>
+                <div> <i class="fa-solid fa-bookmark"><a href="#">  Saved</a> <br></br></i></div>
+                <div> <i class="fa-solid fa-user "><a href="#">  Profile<br></br> </a> </i>  </div>
+                <div>   <i class="fas fa-sign-out-alt"><a href="./login.html">  Log out<br></br></a></i>  </div>
+
+             </div>
+            <div class="amazon-logo">
+                <div class="product"><h3>Product of</h3></div>
+                <img class="img-amazon" src="./assets/icons/amazon_logo_icon_169612.png" alt=""></div>
+             </div>
+
+        <div class="tb-new-container">
+        <table class="tb-new-books" >
+            <tr>
+                <td colspan="5" id="new-release"> <h3>New Release</h3>
+                </td>
+            </tr>
+        <tr class="row-books-low">
+            <td>
+                <div class="low-book1">
+                    <img alt="book1" class="book-low" id="bookLow1">
+                    <span class="span-book-low">
+                        <h3 id="no1"></h3>
+                        <h5 class="author1">
+                </h5></span><a class="book-type" id="book-type1"></a></div>
+            </td>
+            <td id="td-low-2">
+                <div class="low-book1">
+                    <img alt="book2" class="book-low" id="bookLow2">
+                    <span class="span-book-low"><h3 id="no2"></h3>
+                    <h5 class="author2">
+                </h5></span><a class="book-type" id="book-type2"></a></div>
+            </td>
+            <td id="td-low-3">
+                <div class="low-book1">
+                    <img alt="book3" class="book-low" id="bookLow3">
+                    <span class="span-book-low"><h3 id="no3"></h3>
+                    <h5 class="author3">
+                </h5></span><a class="book-type" id="book-type3"></a></div>
+            </td>
+            <td id="td-low-4">
+                <div class="low-book1">
+                    <img alt="book" class="book-low" id="bookLow4">
+                    <span class="span-book-low"><h3 id="no4"></h3>
+                    <h5 class="author4">
+                </h5></span><a class="book-type" id="book-type4"></a></div>
+            </td>
+            <td id="td-low-5">
+                <div class="low-book1">
+                    <img alt="book5" class="book-low" id="bookLow5">
+                    <span class="span-book-low"><h3 id="no5"></h3>
+                        <h5 class="author5">       
+                </h5></span><a class="book-type" id="book-type5"></a></div>
+
+            </td>
+        </tr>
+        </table>
+    </div>
+
+        <div class="right-bottom-panel"> 
+            
+            <div class="famous"> <h4>Famous Authors</h4></div>
+            <div class="tb-right-panel-container">
+            <table class="tb-right-panel">
+                <tr>
+                    <td>
+                        <div class="author"><img class="author-photo" alt="" id="author-1-pic"> </div>
+                    </td>
+                    <td>
+                        <div class="author-name1"><h5 id="author-1-name"> </h5></div>    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="author"><img class="author-photo"  alt="" id="author-2-pic"> </div>
+                    </td>
+                    <td>
+                        <div class="author-name2"><h5 id="author-2-name"></h5></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="author"><img class="author-photo" alt="" id="author-3-pic"> </div>
+                    </td>
+                    <td>
+                        <div class="author-name3"><h5 id="author-3-name"></h5></div>
+                    </td>
+                </tr>
+            </table> 
+        </div>      
+    </div>
+  
+    
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Kindle Login Page</title>
+ <meta charset="utf-8">
+ <meta name="description" content="Login to Kindle Library">
+ <meta name="author" content="Lesetja Modiba">
+ <link rel="stylesheet" href="./css/login.css">
+ <script src="https://kit.fontawesome.com/be361c6523.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+     <div class="container">
+         <div class="signin-signup">   
+            <form action="" class="sign-in-form" method="POST" id="sign-in-form">
+                <h2 class="title">Sign In</h2>
+                <div class="input-field">
+                <i class="Username"> </i>
+                 <input type="text" id="username" placeholder="Username" >
+                 </div> 
+                 <span id="usernameError">Username is required</span>
+                 <div class="input-field">
+                    <i class="password"> </i>
+                     <input type="password" id="password" placeholder="Password">
+                     </div>   
+                     <span id="passwordError">Password is required</span>
+                     <input type="submit" name="Login" value="Sign in" class="sign-in-btn" >
+                        
+                     <img class="amazon-logo" src="./assets/icons/amazon_logo_icon_169612.png" alt="">     
+            </form>
+            <form action="" class="sign-up-form" id="sign-up-form" >
+                <h2 class="title">Register</h2>
+              
+                <div class="input-field">
+                <i class="reg-username"> </i>
+                <span id="usernameError"></span>
+                 <input type="text" id="reg-username" placeholder="Name and Surname" >
+                 </div> 
+                 <div class="reg-input-field">
+                    <i class="fa-solid fa-circle-envelope"></i>
+                     <input type="text" id="email" placeholder="Email ">
+                     </div> 
+                     <div class="reg-input-field">
+                        <i class="phone-no"> </i>
+                         <input type="text" placeholder="Phone Number" id="phone-no">
+                         <span id="phoneError"></span>
+                         </div>  
+                 <div class="reg-input-field">
+                    <i class="password"> </i>
+                     <input type="reg-password" id="reg-password" placeholder="Password" >
+                     <span id="reg-passwordError"></span>
+                     </div>   
+                     <div class="profile-pic">
+                            
+                        <input type="file" id="file">
+                        
+                        </div>
+                     <input type="submit" name="Login" value="Sign up" class="register-btn" > 
+                     <img class="amazon-logo" src="./assets/icons/amazon_logo_icon_169612.png" alt="">   
+            </form>                    
+        </div>
+            <div class="panels-container">
+             <div class="panel panel-left">
+                 <div class="content"><h3>Member of Kindle?</h3>
+                    <p>Click The button below to sign in..</p>
+                <button class="btn" id="sign-in-btn">Sign in </button>
+               </div>
+               <img src="./assets/icons/login.png" alt="sign-in" class="image">
+             </div>
+
+                <div class="panel panel-right">
+                    <div class="content"><h3>New to Kindle?</h3>
+                       <p>The biggest selection of ebooks and audiobooks from Kindle in Literature and Fiction, Foreign languages, religion and spirituality, business, romance, history, mystery, and many more, Click here to register your new account...</p>
+                   <button class="btn" id="register-btn">Register</button>
+                     
+                   </div>
+                   <img src="./assets/icons/add-user.png" alt="sign-up" class="image">
+             </div>
+         </div>
+        </div>
+
+  <script src="./JS/app.js"></script>
+  <script src="./JS/login.js"></script>
+  <!-- <script src="./JS/loginAlt.js"></script>  -->
+</body>
+
+</html>
